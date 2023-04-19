@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    min-width: 400px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: grey;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 300px;
+    align-items: top;
+    padding-left: 50px;
+}
+
+.logo span {
+    display: flex;
+    color: black;
+    font-family: "Sarina", regular;
+    font-size: 30px;
+    padding-left: 1px;
+}
+
+
+.logo span2 {
+    font-size: 20px;
+    padding-top: 60px;
+    color: black;
+}
+
+
+header ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    0px;
+}
+
+.wrapper {
+    width: 400px;
+    height: 300px;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(34, 33, 33);
+}
+
+
+.wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tool {
+    width: 400px;
+    height: 300px;
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: 0, 3s;
+    color: black;
+}
+
+
+.tool:hover {
+    box-shadow: 0px 9px 32px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tools-wrapper {
+    min-height: calc(100vh - 200px);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 16px;
+    color: black;
+}
+
+
+.sort-wrapper {
+    padding-left: 30px;
+}
+
+footer {
+    background-color: grey;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.tool-link {
+    height: 300px;
+}
+
+
+footer div {
+    color: black;
+}
+
+
+
+
+.tool img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tool-wrapper {
+    background-color: #fafafa;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid rgb(237, 237, 237);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tool-section {
+    min-height: calc(100vh - 200px);
+}
+
+.tool-photo {
+    background-position: center;
+    background-size: cover;
+}
+
+.tool-content {
+    padding: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.tool-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+    
+}
+
+.tool-description {
+    font-size: 18px;       
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.tool-price {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.tool-sort {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.tool-producer {
+    font-size: 18px;
+       
+}  
+
+
+.tool_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+
+.tool_form input {
+    padding: 8px;
+}
+
+.tool_form button {
+    padding: 8px;
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+}
+
+.success_message {
+    color: green;
+}
+
+@media only screen and (max-width: 768px) {
+    .tool-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-photo {
+        height: 300px;
+    }
+
+    .wrapper {
+        width: 360px;
+    }
+
+    .sort {
+        padding-left: 30px;
+        padding-right: 30px;
+        color: black;
+    }
+
+    .e-shop {
+        color: black;
+    }
