@@ -4,6 +4,7 @@ body {
 }
 
 a {
+    color: black;
     text-decoration: none;
 }
 
@@ -180,11 +181,11 @@ footer div {
 .tool-title {
     font-size: 24px;
     margin-bottom: 8px;
-    
+
 }
 
 .tool-description {
-    font-size: 18px;       
+    font-size: 18px;
     line-height: 1.4;
     margin-bottom: 15px;
 }
@@ -202,8 +203,8 @@ footer div {
 
 .tool-producer {
     font-size: 18px;
-       
-}  
+
+}
 
 
 .tool_form {
@@ -232,21 +233,48 @@ footer div {
     .tool-wrapper {
         grid-template-columns: 1fr;
     }
+}
 
-    .tool-photo {
-        height: 300px;
-    }
+@media (max-width: 499px) {
+    .tool-wrapper {}
+}
 
-    .wrapper {
-        width: 360px;
-    }
 
-    .sort {
-        padding-left: 30px;
-        padding-right: 30px;
-        color: black;
-    }
+@media (max-width: 299px) {
+    .tool-wrapper {}
+}
 
-    .e-shop {
-        color: black;
-    }
+@media screen and (min-width: 300px) {
+    .container-mobile {}
+}
+
+
+@media screen and (min-width: 300px) {
+    .container-mobile {}
+}
+
+
+@media screen and (min-width: 300px) {
+    .container-mobile {}
+}
+
+
+
+
+
+
+
+
+.tool-photo {
+    height: 300px;
+}
+
+.wrapper {
+    width: 360px;
+}
+
+.sort {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+}

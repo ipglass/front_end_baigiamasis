@@ -17,8 +17,8 @@ const addElementsToScreen = (data) => {
     const description = document.getElementById("tool-description");
     description.innerHTML = `description: ${data.description}`;
 
-    
-    const producer= document.getElementById("tool-producer");
+
+    const producer = document.getElementById("tool-producer");
     producer.innerHTML = `sales reference: ${data.producer}`;
 };
 
@@ -33,4 +33,33 @@ fetch(`https://6434a335537112453fc42b14.mockapi.io/tool/${toolId}`)
     });
 
 
-    
+
+
+    deleteButton.addEventListener("click", () => {
+    fetch(
+        `https://6434a335537112453fc42b14.mockapi.io/tool/${toolId}`,
+        {
+            method: "DELETE",
+        }
+    )
+            .then((res) => {
+            return res.json();
+        })
+        .then((data) => {
+            
+            console.log("Data deleted:", data);
+            container.innerHTML = `
+            <div class="after-delete-wrapper">
+            <h3 class="after-delete">Tool was deleted successfully<h3>
+        </div>
+            `;
+            
+        });
+});
+
+
+
+
+
+
+
