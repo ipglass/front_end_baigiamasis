@@ -49,8 +49,8 @@ fetch(`https://6434a335537112453fc42b14.mockapi.io/tool/${toolId}`)
             
             console.log("Data deleted:", data);
             container.innerHTML = `
-            <div class="after-delete-wrapper">
-            <h3 class="after-delete">Tool was deleted successfully<h3>
+            <div class="delete-wrapper">
+            <Tool was deleted successfully<
         </div>
             `;
             
